@@ -3,8 +3,35 @@ import LoadQuoteForm from "./components/LoadQuoteForm";
 import Image from "next/image";
 
 export default function HomePage() {
+  const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "TransportationService",
+  name: "I Move It Transport",
+  areaServed: "United States",
+  provider: {
+    "@type": "Organization",
+    name: "I Move It Transport",
+    url: "https://www.imoveittransport.com"
+  },
+  identifier: [
+    {
+      "@type": "PropertyValue",
+      name: "USDOT",
+      value: "4539899"
+    },
+    {
+      "@type": "PropertyValue",
+      name: "MC",
+      value: "1801432"
+    }
+  ]
+};
   return (
     <div className="min-h-screen bg-white text-slate-900">
+     <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
       <header className="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-10">
   <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
     <div className="flex items-center gap-4">
