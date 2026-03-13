@@ -70,6 +70,7 @@ export default function HomePage() {
     <div><strong>Coverage:</strong> Interstate (Nationwide)</div>
   </div>
 </div>
+{/*}
 <a
   href="/broker-packet.pdf"
   className="inline-block mt-4 px-6 py-3 rounded-xl text-white"
@@ -77,6 +78,7 @@ export default function HomePage() {
 >
   Download Carrier Packet
 </a>
+*/}
       <main>
         <div className="max-w-6xl mx-auto px-6 pt-8">
           <Image
