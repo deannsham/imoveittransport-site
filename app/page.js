@@ -108,7 +108,7 @@ export default function HomePage() {
                   <div><strong>Service Type:</strong> Expedited Cargo Van Freight</div>
                   <div><strong>Coverage:</strong> Interstate (Nationwide)</div>
                 </div>
-
+                {/*}
                 <a
                   href="/broker-packet.pdf"
                   className="inline-block mt-4 px-6 py-3 rounded-xl text-white"
@@ -116,6 +116,7 @@ export default function HomePage() {
                 >
                   Download Carrier Packet
                 </a>
+                */}
 </div>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
